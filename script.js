@@ -259,7 +259,7 @@ function calculateScore() {
     patterns.forEach(pattern => {
         const signature = pattern.positions
         .map(([r, c]) => `${r}, ${c}`)
-        .sort
+        .sort()
         .join("|");
 
         if (!scoredPatterns.has(signature)) {
